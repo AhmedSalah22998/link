@@ -81,7 +81,7 @@ if (isMobileDevice()) {
         <div class="w-full container px-6 flex md:justify-between flex-wrap flex-col md:flex-row">
           <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
             <h1 class="mt-4 mb-8 text-3xl md:text-4xl text-purple-800 font-bold leading-tight text-center md:text-right slide-in-bottom-h1">
-              تطبيقات منصة إثراء متاحة الآن علي الأنظمة التالية
+              تطبيقات منصة إثراء متاحة الآن على الأنظمة التالية
             </h1>
 
             <p class="text-blue-400 font-bold pb-8 lg:pb-6 text-center fade-in">
@@ -115,7 +115,7 @@ if (isMobileDevice()) {
           <div class="w-full xl:w-3/5 py-6 overflow-y-hidden text-left">
             <img
               class="w-5/6 mx-auto lg:mr-0 slide-in-bottom"
-              src="https://tailwindtoolbox.github.io/App-Landing-Page/devices.svg"
+              src="./img/1.jpg"
             />
           </div>
         </div>
@@ -141,7 +141,7 @@ if (isMobileDevice()) {
         <div class="w-full container px-6 flex md:justify-between flex-wrap flex-col md:flex-row">
           <div class="flex flex-col w-full xl:w-2/5 justify-center lg:items-start overflow-y-hidden">
             <h1 class="mt-4 mb-8 text-3xl md:text-4xl text-purple-800 font-bold leading-tight text-center md:text-right slide-in-bottom-h1">
-              تطبيقات منصة إثراء متاحة الآن علي الأنظمة التالية
+              تطبيقات منصة إثراء متاحة الآن على الأنظمة التالية
             </h1>
 
             <p class="text-blue-400 font-bold pb-8 lg:pb-6 text-center fade-in">
@@ -175,7 +175,7 @@ if (isMobileDevice()) {
           <div class="w-full xl:w-3/5 py-6 overflow-y-hidden text-left">
             <img
               class="w-5/6 mx-auto lg:mr-0 slide-in-bottom"
-              src="https://tailwindtoolbox.github.io/App-Landing-Page/devices.svg"
+              src="./img/1.jpg"
             />
           </div>
         </div>
