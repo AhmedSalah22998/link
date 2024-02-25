@@ -36,6 +36,7 @@ function detectOSForWindow() {
   const platform = navigator.platform.toLowerCase();
 
   if (platform.includes("win")) {
+    console.log("Windows");
     return "Windows";
   } else if (platform.includes("mac")) {
     return "Mac OS";
@@ -52,6 +53,7 @@ function detectOSForWindow() {
 
 const app = detectOS();
 const appWind = detectOSForWindow();
+console.log(detectOSForWindow());
 
 // Example usage
 if (isMobileDevice()) {
@@ -121,14 +123,14 @@ if (isMobileDevice()) {
   }`;
 } else {
   document.body.innerHTML = `${
-    detectOSForWindow === "Mac OS X"
+    appWind === "Mac OS"
       ? `
       ${window.location.assign(
         "https://apps.apple.com/eg/app/ithraa/id6471949412"
       )}
      
       `
-      : detectOSForWindow === "Windows"
+      : appWind === "Windows"
       ? ` ${window.location.assign(
           "https://play.google.com/store/apps/details?id=io.ithraa.ithraa_app&pli=1"
         )}
