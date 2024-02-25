@@ -34,28 +34,18 @@ if (isMobileDevice()) {
   console.log("This is a mobile device.");
   //   document.body.innerHTML = "This is a mobile device ......";
   document.body.innerHTML = `${
-    app === "Android"
+    app === "iOS"
       ? `
-      <a
-        href="https://apps.apple.com/eg/app/ithraa/id6471949412"
-        target="_blank"
-        class="hover:scale-105 transition-transform"
-      >
-        <img
-          src="./img/app-store-google.svg"
-          class="h-12 pr-4 bounce-top-icons"
-        />
-      </a>
+      ${window.location.assign(
+        "https://apps.apple.com/eg/app/ithraa/id6471949412"
+      )}
+     
       `
-      : app === "iOS"
-      ? `
-      <a
-        href="https://play.google.com/store/apps/details?id=io.ithraa.ithraa_app&pli=1"
-        target="_blank"
-        class="hover:scale-105 transition-transform"
-      >
-        <img src="./img/app-store-apple.svg" class="h-12 bounce-top-icons" />
-      </a> `
+      : app === "Android"
+      ? ` ${window.location.assign(
+          "https://play.google.com/store/apps/details?id=io.ithraa.ithraa_app&pli=1"
+        )}
+       `
       : `<div class="h-screen">
         <div class="w-full container mx-auto p-6">
           <div class="w-full flex justify-between">
