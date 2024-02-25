@@ -33,21 +33,17 @@ function detectOS() {
 
 // Function to detect the operating system
 function detectOSForWindow() {
-  const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+  const platform = navigator.platform.toLowerCase();
 
-  if (/windows/i.test(userAgent)) {
+  if (platform.includes("win")) {
     return "Windows";
-  }
-
-  if (/macintosh|mac os x/i.test(userAgent)) {
-    return "Mac OS X";
-  }
-
-  if (/linux/i.test(userAgent)) {
+  } else if (platform.includes("mac")) {
+    return "Mac OS";
+  } else if (platform.includes("linux")) {
     return "Linux";
+  } else {
+    return "Unknown";
   }
-
-  return "unknown";
 }
 
 // Example usage
@@ -59,8 +55,6 @@ const appWind = detectOSForWindow();
 
 // Example usage
 if (isMobileDevice()) {
-  console.log("This is a mobile device.");
-  //   document.body.innerHTML = "This is a mobile device ......";
   document.body.innerHTML = `${
     app === "iOS"
       ? `
