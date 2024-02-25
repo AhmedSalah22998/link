@@ -51,9 +51,10 @@ function detectOSForWindow() {
 
 /////
 
+// for mobile
 const app = detectOS();
+//
 const appWind = detectOSForWindow();
-console.log(detectOSForWindow());
 
 // Example usage
 if (isMobileDevice()) {
@@ -130,14 +131,9 @@ if (isMobileDevice()) {
       )}
      
       `
-      : appWind === "Windows"
-      ? ` ${window.location.assign(
-          "https://play.google.com/store/apps/details?id=io.ithraa.ithraa_app&pli=1"
-        )}
-       `
       : `<div class="h-screen">
-        <div class="w-full container mx-auto p-6">
-          <div class="w-full flex justify-between">
+        <div class="w-full container p-6">
+          <div class="w-full">
             <img src="./img/ithraa_logo.svg" class="w-20 inline" />
           </div>
         </div>
@@ -159,7 +155,7 @@ if (isMobileDevice()) {
               >
                 <img
                   src="./img/app-store-google.svg"
-                  class="h-12 pr-4 bounce-top-icons"
+                  class="h-12 bounce-top-icons"
                 />
               </a>
 
