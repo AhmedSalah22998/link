@@ -74,7 +74,9 @@ if (isMobileDevice()) {
       : `<div class="h-screen">
         <div class="w-full container mx-auto p-6">
           <div class="w-full flex justify-between">
+          <a href="https://ithraa.io/">
             <img src="./img/ithraa_logo.svg" class="w-20 inline" />
+          </a>
           </div>
         </div>
 
@@ -134,7 +136,9 @@ if (isMobileDevice()) {
       : `<div class="h-screen">
         <div class="w-full container p-6">
           <div class="w-full">
+            <a href="https://ithraa.io/"  target="_blank">
             <img src="./img/ithraa_logo.svg" class="w-20 inline" />
+          </a>
           </div>
         </div>
 
